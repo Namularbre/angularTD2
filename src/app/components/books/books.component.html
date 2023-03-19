@@ -1,4 +1,5 @@
 <h2>Nos livres</h2>
 <ul *ngFor="let book of books$ | async">
     <li>{{ book.title }}</li>
+    <app-book [book]="book"></app-book>
 </ul>
